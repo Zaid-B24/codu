@@ -109,8 +109,8 @@ const MyPosts = () => {
         />
       )}
       <div className="relative mx-4 max-w-2xl bg-neutral-100 dark:bg-black sm:mx-auto">
-        <div className="mb-4 mt-8">
-          <Tabs tabs={tabs} />
+      <div className="mb-4 mt-8">
+      <Tabs tabs={tabs} />
         </div>
         <div>
           {selectedTabData.status === "loading" && (
