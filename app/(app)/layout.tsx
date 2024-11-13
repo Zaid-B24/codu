@@ -78,16 +78,16 @@ export default async function RootLayout({
     : null;
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <Nav
         session={session}
         algoliaSearchConfig={algoliaSearchConfig}
         username={userData?.username || null}
       />
-      <main className="flex-grow w-full relative mx-auto max-w-2xl bg-neutral-100 dark:bg-black sm:mx-auto">
+      <main className="relative mx-auto w-full max-w-2xl flex-grow bg-neutral-100 dark:bg-black sm:mx-auto">
         {children}
       </main>
       <Footer />
-      </div>
+    </div>
   );
 }
